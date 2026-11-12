@@ -1,0 +1,54 @@
+{
+  "model_terbaik": "XGBoost",
+  "ambang_probabilitas": 0.8177385926246643,
+  "ambang_risiko_hotspot": 10,
+  "ukuran_grid_derajat": 0.5,
+  "periode_data": [
+    2012,
+    2025
+  ],
+  "split": {
+    "latih_sampai": 2022,
+    "validasi": [
+      2023,
+      2024
+    ],
+    "uji": 2025
+  },
+  "jumlah_sel": 944,
+  "fitur": [
+    "hotspot_bulan_ini",
+    "hotspot_bulan_lalu",
+    "hotspot_2bulan_lalu",
+    "rata2_3bulan",
+    "frp_rata2_ini",
+    "hotspot_tahun_lalu",
+    "rata2_historis_bulan",
+    "bulan_target",
+    "bulan_sin",
+    "bulan_cos",
+    "hotspot_tetangga_ini",
+    "grid_lat",
+    "grid_lon",
+    "oni_lag1",
+    "oni_delta3",
+    "dmi_lag1",
+    "hujan_bulan_ini",
+    "anomali_hujan_ini",
+    "anomali_hujan_3bulan",
+    "bulan_kering_beruntun",
+    "anomali_suhu_ini",
+    "rh_bulan_ini"
+  ],
+  "uji": {
+    "precision": 0.3885,
+    "recall": 0.7204,
+    "f1": 0.5048,
+    "pr_auc": 0.5297,
+    "roc_auc": 0.9659,
+    "tp": 237,
+    "fp": 373,
+    "fn": 92,
+    "tn": 10626
+  }
+}

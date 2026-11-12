@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.venv/
+data/dataset_grid_bulan.csv.gz
+data/model_terbaik.joblib
